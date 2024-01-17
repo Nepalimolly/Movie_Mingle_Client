@@ -28,7 +28,14 @@ const Login = () => {
       await login(inputs);
       navigate("/");
     } catch (err) {
-      setErr(err.res.data);
+      if (err.response && err.response.data) {
+        // If err.response is defined and has data
+        setErr(err.response.data);
+      } else {
+        // Fallback in case response or data is undefined
+        console.error("Login failed", err);
+        setErr("An error occurred during login");
+      }
     }
   };
 
