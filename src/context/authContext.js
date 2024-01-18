@@ -37,7 +37,7 @@ export const AuthContextProvider = ({ children }) => {
   const signup = async (inputs) => {
     try {
       const res = await axios.post(
-        "https://movie-mingle-be.onrender.com/api/auth/signup",
+        "http://localhost:8800/api/auth/signup",
         inputs
       );
 
@@ -59,7 +59,7 @@ export const AuthContextProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      await axios.post("https://movie-mingle-be.onrender.com/api/auth/logout");
+      await axios.post("http://localhost:8800/api/auth/logout");
 
       // Clear localStorage and currentUser state
       localStorage.removeItem("user");
@@ -73,7 +73,7 @@ export const AuthContextProvider = ({ children }) => {
   const updateUser = async (updatedUser) => {
     try {
       const res = await axios.put(
-        "https://movie-mingle-be.onrender.com/api/auth/update",
+        "http://localhost:8800/api/auth/update",
         updatedUser
       );
 
