@@ -8,7 +8,7 @@ export const MovieCard = ({ movie, type }) => {
   };
 
   return (
-    <div className="movie-card">
+    <div className="movie-card" data-testid="movie-card">
       <div className="overlay"></div>
 
       {movie.primaryImage && movie.primaryImage.url ? (

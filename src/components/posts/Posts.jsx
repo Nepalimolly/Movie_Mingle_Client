@@ -10,6 +10,7 @@ const Posts = ({ userId }) => {
       .get(userId ? `/posts?userId=${userId}` : "/posts")
       .then((res) => res.data)
   );
+  console.log("Posts data:", data);
 
   return (
     <div className="posts">

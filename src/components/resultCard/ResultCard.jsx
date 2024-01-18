@@ -21,7 +21,7 @@ export const ResultCard = ({ movie }) => {
     height: "300px",
   };
   return (
-    <div className="result-card">
+    <div className="result-card" data-testid="result-card">
       <div className="poster-wrapper">
         {movie.primaryImage && movie.primaryImage.url ? (
           <img

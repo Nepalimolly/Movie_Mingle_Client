@@ -23,6 +23,8 @@ const Post = ({ post }) => {
     })
   );
 
+  console.log("Likes data:", data);
+
   const queryClient = useQueryClient();
   // make an api call to /posts, if it is succesfull refetch information
   const mutation = useMutation(

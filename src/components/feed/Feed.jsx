@@ -3,8 +3,8 @@ import bannerImage from "../../images/mm.png";
 
 const Feed = () => {
   return (
-    <div className="feed">
-      <div className="story">
+    <div className="feed" data-testid="feed">
+      <div className="story" data-testid="story">
         <img src={bannerImage} alt="Banner" />
       </div>
     </div>

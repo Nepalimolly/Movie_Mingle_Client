@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
+    <div className="navbar" data-testid="navbar">
       <div className="left">
         <Link to="/" style={{ textDecoration: "none" }}>
           <span>MovieMingle</span>

@@ -36,7 +36,7 @@ const Comments = ({ postId }) => {
   };
 
   return (
-    <div className="comments">
+    <div className="comments" data-testid="comments">
       <div className="write">
         <img src={currentUser.profilePic} alt="" />
         <input
